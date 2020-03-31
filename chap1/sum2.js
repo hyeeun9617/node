@@ -1,7 +1,8 @@
-let max =20;
-let min =10;
-for (let i = 0; i<30; i++){ 
-    let a = Math.floor(Math.random()*(max-min+1)+min); 
-
-    console.log(a);
+let sum =0;
+for(let i=1; i<=55; i++){
+   if(i%3==0){
+        sum=sum+i;
+   }
+   
 }
+console.log(sum);

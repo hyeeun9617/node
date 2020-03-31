@@ -1,5 +1,5 @@
-let studentcount = 31;
-let student = 10;
-let answer = Math.ceil(studentcount/student);
-
-console.log(answer);
+let sum =0;
+for(let i=1; i<=55; i++){
+    sum=sum+i;
+}
+console.log(sum);
