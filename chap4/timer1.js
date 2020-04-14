@@ -9,7 +9,6 @@ function print() {
     if(count == 10){
         clearInterval(id);
     }
-
 }
 
 
