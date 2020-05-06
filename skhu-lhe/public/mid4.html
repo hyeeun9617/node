@@ -4,7 +4,14 @@
     <meta charset="utf-8" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <style>
-    
+        div#hello {
+            padding: 20px;
+            margin: 30px auto;
+           
+            border: 1px solid #ccc;
+            box-shadow: 3px 3px 3px #aaa;
+        }
+
         label {
             font-size: 20pt;
         }
@@ -14,39 +21,41 @@
             height: 20px;
         }
 
-        div#hello {
+       
+        #hello {
             margin: 30px;
             padding: 50px;
-            background-color: #00ff9d;
-            border: 1px solid gray;
-            text-align: center;
+            background-color: #8eaeeb;
+            
+            font-size: 20pt;
+        }
+
+        #hello2 {
+            margin: auto;
+           
+            background-color: #f0b7ed;
+            
             font-size: 20pt;
         }
     </style>
 </head>
 
 <body>
-    <div id="app">
+    <div id="app"> 
         <label>
-            <input type="radio" value="true" v-model="visible" />
-            남자
-        </label>
-        <label>
-            <input type="radio" value="false" v-model="visible" />
-            여자
-        </label>
-        
-        <div id="hello" v-show="visible">남자</div>
-        <div id="hello" v-show ="!visible">여자</div>
+         <input type="radio" value="true" v-model="visible" /> 남자 </label> <label> <input
+            type="radio" value="false" v-model="visible" /> 여자 </label>
+        <div id="hello" v-show="visible == 'true'">남자</div>
+        <div id="hello2" v-show="visible == 'false'">여자</div>
     </div>
-    <script type="text/javascript">
-        var app = new Vue({
-            el: '#app',
-            data: {
-                visible: ''
-            }
-        })
-    </script>
+    <script type="text/javascript"> 
+    var app = new Vue({
+         el: '#app',
+          data: {
+               visible: true
+             } 
+            })
+     </script>
 </body>
 
 </html>
