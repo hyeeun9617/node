@@ -5,7 +5,15 @@
 <style>
  
 
-       #s {
+ div#app {
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 200px;
+            border: 1px solid #ccc;
+            box-shadow: 3px 3px 3px #aaa;
+        }
+
+       #hello {
             margin: 30px;
             padding: 50px;
             background-color: #ffa;
@@ -19,20 +27,19 @@
 
 <body>
     <div id="app">
-        <div id = "s" v-bind:key="square"
-                v-on:click="increase" v-model="num">
-            {{ num }}
+        <div id = "hello" v-on:click="increase" v-model="num">
+            {{ number }}
     </div>   
     </div>
     <script type="text/javascript"> 
         var app = new Vue({
             el: '#app',
             data: { 
-                num : 0
+                number : 0
             },
             methods: {
                 increase: function() {
-                    this.num++;
+                    this.number++;
                 }
             } 
         }) 
