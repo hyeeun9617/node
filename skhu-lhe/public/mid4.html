@@ -22,10 +22,10 @@
         }
 
        
-        #hello {
+         #hello {
             margin: 30px;
             padding: 50px;
-            background-color: #8eaeeb;
+            background: #8eaeeb;
             
             font-size: 20pt;
         }
@@ -33,7 +33,7 @@
         #hello2 {
             margin: auto;
            
-            background-color: #f0b7ed;
+            background: #f0b7ed;
             
             font-size: 20pt;
         }
@@ -43,8 +43,9 @@
 <body>
     <div id="app"> 
         <label>
-         <input type="radio" value="true" v-model="visible" /> 남자 </label> <label> <input
-            type="radio" value="false" v-model="visible" /> 여자 </label>
+         <input type="radio" value="true" v-model="visible" /> 남자 </label>
+          <label>
+        <input type="radio" value="false" v-model="visible" /> 여자 </label>
         <div id="hello" v-show="visible == 'true'">남자</div>
         <div id="hello2" v-show="visible == 'false'">여자</div>
     </div>

@@ -15,12 +15,12 @@
 
 <body>
     <div id="app">
-        <input type="text" v-model="c"/>
+        <input type="text" v-model="number"/>
         
         <table border="1">
             <tr v-for="r in rowSize">
                 <td v-for="c in colSize">
-                    {{c+1}} * {{r}} = {{ (c+1)*r }}
+                    {{c}} * {{r}} = {{ (c+1)*r }}
                 </td>
             </tr>
             
@@ -32,7 +32,12 @@
             data: {
                 rowSize: 9,
                 colSize: 1,
-                number:''
+                number:'2'
+            },
+           function gugu(){
+                for(int i=0;i>9;i++){
+
+                }
             }
         })    
     </script>
